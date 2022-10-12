@@ -2,9 +2,9 @@ pipeline{
 
 	agent any
 
-#	environment {
-#		DOCKERHUB_CREDENTIALS=credentials('dockerJenkins')
-#	}
+	environment {
+		DOCKERHUB_CREDENTIALS=credentials('dockerJenkins')
+	}
 
 	stages {
 
