@@ -28,6 +28,15 @@ pipeline{
 				sh 'docker push ritikvirus/react-app:latest'
 			}
 		}
+
+		stage('Run') {
+
+                        steps {
+                                sh 'docker run -d -p 80:3000 --name cicd ritikvirus/react-app:latest'
+                        }
+                }
+		
+
 	}
 
 	post {
