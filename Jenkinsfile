@@ -34,6 +34,7 @@ pipeline{
 	
 		stage('remove'){
 			steps {
+				sh 'docker stop cicd'
 				sh 'docker rm cicd'
 			}	
 		}
