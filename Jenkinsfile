@@ -1,6 +1,6 @@
 pipeline{
 	paremeters {
-	string(name: 'devVersion', defaultValue: 'latest')
+	string(name: 'imageVersion', defaultValue: 'latest')
 }	
 
 	agent any
