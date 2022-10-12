@@ -1,4 +1,7 @@
 pipeline{
+	paremeters {
+	string(name:'devVersion','defaultValue:'latest')
+}	
 
 	agent any
 
