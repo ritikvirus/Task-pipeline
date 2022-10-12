@@ -31,6 +31,12 @@ pipeline{
 				sh 'docker push ritikvirus/react-app:latest'
 			}
 		} */
+	
+		stage('remove'){
+			steps {
+				sh 'docker rm cicd'
+			}	
+		}
 
 		stage('Run') {
 
