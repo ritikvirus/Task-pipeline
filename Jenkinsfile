@@ -1,7 +1,6 @@
 pipeline{
 	paremeters {
 	string(name: 'devVersion', defaultValue: 'latest')
-	booleanParam(name: 'dryRun', defaultValue: false)
 }	
 
 	agent any
