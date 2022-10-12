@@ -1,5 +1,5 @@
 pipeline{
-	paremeters {
+	parameters {
 	string(name: 'imageVersion', defaultValue: 'latest')
 }	
 
